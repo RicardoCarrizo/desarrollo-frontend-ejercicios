@@ -1,41 +1,73 @@
-<form action="/procesar-formulario" method="post">
-    <fieldset>
-      <legend>Datos personales:</legend>
-      <label for="nombre">Nombres:</label>
-      <input type="text" id="nombre" name="nombre" required><br>
-  
-      <label for="apellido">Apellidos:</label>
-      <input type="text" id="apellido" name="apellido" required><br>
-      
-      <label for="correo">Correo electrónico:</label>
-      <input type="email" id="correo" name="correo" required><br>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+    <form action="/procesar-formulario" method="post">
+      <fieldset>
+        <legend>Datos personales:</legend>
+        <label for="nombre">Nombres:</label>
+        <input type="text" id="nombre" name="nombre" required /><br />
 
-      <label for="contrasena">Contraseña:</label>
-      <input type="password" id="contrasena" name="contrasena" minlength="8" required><br>
-      
-      <label for="confirmar_contrasena">Confirmar contraseña:</label>
-      <input type="password" id="confirmar_contrasena" name="confirmar_contrasena" minlength="8" required><br>
-      
-      <label for="pais">País de residencia:</label>
-      <select id="pais" name="pais" required>
-        <option value="">Seleccione una opción</option>
-        <option value="Chile">Chile</option>
-        <option value="Argentina">Argentina</option>
-        <option value="Bolivia">Bolivia</option>
-        <option value="Peru">Peru</option>
-      </select><br>
+        <label for="apellido">Apellidos:</label>
+        <input type="text" id="apellido" name="apellido" required /><br />
 
-      <label for="fecha_nacimiento">Fecha de nacimiento:</label>
-      <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required><br>
-  
-      <label for="genero">Género:</label>
-      <label><input type="radio" name="genero" value="hombre" required> Hombre</label>
-      <label><input type="radio" name="genero" value="mujer"> Mujer</label><br>
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" id="correo" name="correo" required /><br />
 
-      <input type="checkbox" id="agree" name="agree" value="acepto">
-      <label for="agree"> Acepto términos y condiciones del sitio</label><br>
-      
-    </fieldset>
-  
-    <button type="submit">Enviar formulario</button>
-  </form>
+        <label for="contrasena">Contraseña:</label>
+        <input
+          type="password"
+          id="contrasena"
+          name="contrasena"
+          minlength="8"
+          required
+        /><br />
+
+        <label for="confirmar_contrasena">Confirmar contraseña:</label>
+        <input
+          type="password"
+          id="confirmar_contrasena"
+          name="confirmar_contrasena"
+          minlength="8"
+          required
+        /><br />
+
+        <label for="pais">País de residencia:</label>
+        <select id="pais" name="pais" required>
+          <option value="">Seleccione una opción</option>
+          <option value="Chile">Chile</option>
+          <option value="Argentina">Argentina</option>
+          <option value="Bolivia">Bolivia</option>
+          <option value="Peru">Peru</option></select
+        ><br />
+
+        <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+        <input
+          type="date"
+          id="fecha_nacimiento"
+          name="fecha_nacimiento"
+          required
+        /><br />
+
+        <label for="genero">Género:</label>
+        <label
+          ><input type="radio" id="genero" name="genero" value="hombre" required />
+          Hombre</label
+        >
+        <label><input type="radio" id="genero" name="genero" value="mujer" /> Mujer</label
+        ><br />
+
+        <input type="checkbox" id="agree" name="agree" value="acepto" />
+        <label for="agree"> Acepto términos y condiciones del sitio</label
+        ><br />
+      </fieldset>
+
+      <button type="submit">Enviar formulario</button>
+    </form>
+  </body>
+</html>
