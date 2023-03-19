@@ -1,0 +1,35 @@
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+  }
+  nav a:hover {
+    background-color: #555;
+  }
+  /* Estilos para la sección lateral */
+  aside {
+    float: right;
+    width: 30%;
+    background-color: #f2f2f2;
+    padding: 10px;
+  }
+  aside h2 {
+    font-size: 20px;
+    margin-top: 0;
+  }
+  aside ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  aside li {
+    margin-bottom: 5px;
+  }
