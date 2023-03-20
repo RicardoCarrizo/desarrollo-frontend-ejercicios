@@ -1,6 +1,6 @@
 h1 {
     display: block;
-    font-family: 'Arial Narrow',Arial,sans-serif;
+    font-family: 'Arial Narrow';
     font-size: 2.6em;
     color: #224291;
     font-weight: bold;
@@ -16,17 +16,22 @@ h2 {
     margin: 10px 0;
 }
 
+strong {
+color: #224baf;
+
+}
+
 .tabla-contenido {
     width: 505px;
     border-bottom: 1px solid #d6deeb
 }
 
-.tabla-contenido .tctabla-titulo {
+.tabla-contenido .tabla-titulo {
     background: #224baf;
     height: 40px
 }
 
-.tabla-contenido .tctabla-titulo th {
+.tabla-contenido .tabla-titulo th {
     color: #fff;
     font: 13px Arial;
     height: 28px;
@@ -39,7 +44,7 @@ h2 {
     border-right: 1px solid #284fac
 }
 
-.tabla-contenido .tctabla-titulo th.primera {
+.tabla-contenido .tabla-titulo th.columnauno {
     width: 128px;
     text-align: left;
     margin-right: 0;
@@ -47,14 +52,13 @@ h2 {
     border-left: 0
 }
 
-.tabla-contenido .tctr td.primera {
+.tabla-contenido .filas td.columnauno {
     color: #224baf;
     background-color: #c6d0e5;
-    font-size: 1.3em
+    font-size: 15px
 }
 
-.tabla-contenido .tctr td {
-    color: #666;
+.tabla-contenido .filas td {
     font: 11px Arial;
     height: 20px;
     padding-right: 6px;
@@ -67,27 +71,12 @@ h2 {
     border-right: 1px solid #d9dfeb
 }
 
-.tabla-contenido .tctr.tm2 td {
-    padding-top: 10px;
-    padding-bottom: 10px
+p.pie {
+    font-family: Arial;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: justify;
 }
-
-.tabla-contenido .tctr td.tctabla-subtitulo {
-    background-color: #d6deed;
-    border-right: 0;
-    font-family: 'OswaldMedium',Arial,Helvetica,sans-serif;
-    font-size: 1.8em;
-    color: #708dc6;
-    text-shadow: 0 1px 1px #fff
-}
-
-.tabla-contenido .tctabla-titulo th.ultima,.tabla-contenido .tctr td.ultima {
-    padding-right: 10px;
-    border-right: 0
-}
-
-
-
 
 
 
